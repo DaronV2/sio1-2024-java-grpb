@@ -33,7 +33,16 @@
   - Créer une branche locale `bugfix1`, se déplacer dessus, créer un nouveau fichier `ok.java` à la racine du dépôt
   - Ajouter `ok.java` à l'index et faire un _commit_
   - Retourner sur `master`, créer le fichier `ajout.java`, ajouter à l'index et committer
+
+    git switch master 
+    echo >about.java
+    git add .
+    git commit -m "ajout fichier about.java"
+
   - Fusionner la branche `bugfix1` dans la branche `master`
+
+    git merge bugfix1
+
   - Afficher le log des *commits* ; noter les emplacements des trois branches différentes, en local et en remote
   - Faire un _push_
   - Refaire un affichage du log ; `origin/master` a bougé : que représente cette branche ?
