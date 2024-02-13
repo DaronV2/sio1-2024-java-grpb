@@ -20,8 +20,9 @@
 
   - Il faut d'abord faire un _add/commit_ local
 
+    git add .
+    git commit -m "commit local"
 
-  
   - Puis utiliser la commande qui « pousse » les modifs sur le dépôt GitHub (_push_)
   - Vérifier directement sur GitHub que le _push_ a bien fonctionné
 
