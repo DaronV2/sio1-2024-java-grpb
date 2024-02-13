@@ -24,14 +24,28 @@
     git commit -m "commit local"
 
   - Puis utiliser la commande qui « pousse » les modifs sur le dépôt GitHub (_push_)
+
+    git push
+
   - Vérifier directement sur GitHub que le _push_ a bien fonctionné
 
 - Trouver la commande qui affiche le nom du ou des dépôt(s) distant(s) relié(s) avec le dépôt local : cela permet de savoir si le dépôt courant est synchronisé avec un dépôt en ligne ou non
 
+    git remote show
+
 - On va faire un _merge_ en local puis *push* :
 
   - Créer une branche locale `bugfix1`, se déplacer dessus, créer un nouveau fichier `ok.java` à la racine du dépôt
+
+    git branch bugfix1
+    git switch bugfix1
+    echo  > ok.java
+
   - Ajouter `ok.java` à l'index et faire un _commit_
+
+    git add .
+    git commit -m "Ajout fichier ok.java"
+
   - Retourner sur `master`, créer le fichier `ajout.java`, ajouter à l'index et committer
   - Fusionner la branche `bugfix1` dans la branche `master`
   - Afficher le log des *commits* ; noter les emplacements des trois branches différentes, en local et en remote
