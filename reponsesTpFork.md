@@ -47,6 +47,9 @@
     git commit -m "Ajout fichier ok.java"
 
   - Retourner sur `master`, créer le fichier `ajout.java`, ajouter à l'index et committer
+
+    
+
   - Fusionner la branche `bugfix1` dans la branche `master`
   - Afficher le log des *commits* ; noter les emplacements des trois branches différentes, en local et en remote
   - Faire un _push_
