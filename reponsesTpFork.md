@@ -48,7 +48,10 @@
 
   - Retourner sur `master`, créer le fichier `ajout.java`, ajouter à l'index et committer
 
-    
+    git switch master 
+    echo >ok.java
+    git add .
+    git commit -m "ajout 
 
   - Fusionner la branche `bugfix1` dans la branche `master`
   - Afficher le log des *commits* ; noter les emplacements des trois branches différentes, en local et en remote
