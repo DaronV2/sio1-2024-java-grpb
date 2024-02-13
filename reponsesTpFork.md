@@ -37,9 +37,12 @@
     git switch master 
     echo >about.java
     git add .
-    git commit -m "ajout 
+    git commit -m "ajout fichier about.java"
 
   - Fusionner la branche `bugfix1` dans la branche `master`
+
+
+
   - Afficher le log des *commits* ; noter les emplacements des trois branches différentes, en local et en remote
   - Faire un _push_
   - Refaire un affichage du log ; `origin/master` a bougé : que représente cette branche ?
