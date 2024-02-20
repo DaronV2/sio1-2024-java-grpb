@@ -26,7 +26,7 @@
   - Puis utiliser la commande qui « pousse » les modifs sur le dépôt GitHub (_push_)
 
   git push 
-  
+
   - Vérifier directement sur GitHub que le _push_ a bien fonctionné
 
 - Trouver la commande qui affiche le nom du ou des dépôt(s) distant(s) relié(s) avec le dépôt local : cela permet de savoir si le dépôt courant est synchronisé avec un dépôt en ligne ou non
@@ -71,8 +71,17 @@ On la supprime
 - Supposons que l'on veuille effectivement publier sur le _remote_ une branche sur laquelle on travaille (pour sauvegarde ou pour que d'autres puissent l'utiliser)
 
   - Créer une nouvelle branche `partage`
+
+  git branch partage
+
   - Aller sur la branche
+
+  git switch partage
+
   - Ajouter un fichier `partage.md`
+
+  touch partage.md
+
   - L'inclure dans l'index
   - Faire un _commit_
   - _Push_
