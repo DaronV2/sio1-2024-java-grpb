@@ -24,9 +24,14 @@
     git commit -m "commit local"
 
   - Puis utiliser la commande qui « pousse » les modifs sur le dépôt GitHub (_push_)
+
+  git push 
+
   - Vérifier directement sur GitHub que le _push_ a bien fonctionné
 
 - Trouver la commande qui affiche le nom du ou des dépôt(s) distant(s) relié(s) avec le dépôt local : cela permet de savoir si le dépôt courant est synchronisé avec un dépôt en ligne ou non
+
+git show
 
 - On va faire un _merge_ en local puis *push* :
 
@@ -44,20 +49,39 @@
     git merge bugfix1
 
   - Afficher le log des *commits* ; noter les emplacements des trois branches différentes, en local et en remote
+
+    git log
+
   - Faire un _push_
+
+    git push
+
   - Refaire un affichage du log ; `origin/master` a bougé : que représente cette branche ?
+
+    la version visibles du repertoire sur github et non en local
 
 - Étudier le résultat sur GitHub, en examinant _commits_ et branches (bouton _drop-down_ sur la page du dépôt pour voir les branches) : qu'est-ce qui est différent de la version locale ?
 
 - Le bug est corrigé et intégré ; que doit-on faire de la branche `bugfix1` maintenant ?
+
+On la supprime
 
 - **_VALIDATION PROF06_**
 
 - Supposons que l'on veuille effectivement publier sur le _remote_ une branche sur laquelle on travaille (pour sauvegarde ou pour que d'autres puissent l'utiliser)
 
   - Créer une nouvelle branche `partage`
+
+  git branch partage
+
   - Aller sur la branche
+
+  git switch partage
+
   - Ajouter un fichier `partage.md`
+
+  touch partage.md
+
   - L'inclure dans l'index
   - Faire un _commit_
   - _Push_
